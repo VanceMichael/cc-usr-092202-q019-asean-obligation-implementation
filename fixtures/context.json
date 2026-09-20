@@ -1,0 +1,42 @@
+{
+  "domain": "asean-obligation-implementation",
+  "version": 1,
+  "sample_id": "public-sample-019",
+  "actors": [
+    "东盟秘书处",
+    "成员国谈判代表",
+    "法律与技术审查人员",
+    "企业信息发布人员"
+  ],
+  "facts": [
+    "东盟经济部长会议讨论数字经济框架协议",
+    "会议同时推进货物贸易议定书和海关便利化措施",
+    "成员国需要在峰会签署前完成多项准备"
+  ],
+  "constraints": [
+    "协定义务拆解",
+    "国内实施回报",
+    "跨国互认门槛",
+    "企业公开摘要"
+  ],
+  "records": [
+    {
+      "id": "asean-obligation-implementation-source",
+      "kind": "source",
+      "label": "东盟经济部长会议讨论数字经济框架协议",
+      "status": "active"
+    },
+    {
+      "id": "asean-obligation-implementation-review",
+      "kind": "review",
+      "label": "协定义务拆解",
+      "status": "pending"
+    },
+    {
+      "id": "asean-obligation-implementation-history",
+      "kind": "history",
+      "label": "成员国需要在峰会签署前完成多项准备",
+      "status": "historical"
+    }
+  ]
+}
