@@ -1,0 +1,658 @@
+{
+  "domain": "asean-obligation-implementation",
+  "version": 2,
+  "sample_id": "member-measures-sample-026",
+  "as_of": "2026-09-22",
+  "actors": [
+    "东盟秘书处",
+    "成员国谈判代表",
+    "法律与技术审查人员",
+    "企业信息发布人员"
+  ],
+  "facts": [
+    "数字经济框架协议已进入签署准备，条款尚未生效",
+    "货物贸易议定书与海关便利化措施同步推进签署准备",
+    "东盟单一窗口议定书已生效，电子原产地证书交换义务已可落实",
+    "各国仅确认本国事实，跨国依赖与互认条件由秘书处负责"
+  ],
+  "constraints": [
+    "未生效条款不得被标记为已落实",
+    "计划调整、期限延长、部分完成、证据退回必须保留原因",
+    "便利化措施对企业公开的条件是法律与技术条件同时具备且证据通过审查",
+    "多国敏感材料按成员分区保存，跨成员不可见"
+  ],
+  "agreements": [
+    {
+      "id": "ag-defa",
+      "name": "东盟数字经济框架协议",
+      "status": "signature_preparation",
+      "entry_into_force": "not_in_force"
+    },
+    {
+      "id": "ag-gtp",
+      "name": "货物贸易议定书",
+      "status": "signature_preparation",
+      "entry_into_force": "not_in_force"
+    },
+    {
+      "id": "ag-asw",
+      "name": "东盟单一窗口议定书",
+      "status": "in_force",
+      "entry_into_force": "in_force",
+      "effective_date": "2025-01-15"
+    }
+  ],
+  "members": [
+    {
+      "id": "SG",
+      "name": "新加坡",
+      "authorities": [
+        { "id": "customs-sg", "name": "新加坡关税局", "domain": "customs" },
+        { "id": "imda", "name": "资讯通信媒体发展局", "domain": "etransactions" }
+      ]
+    },
+    {
+      "id": "TH",
+      "name": "泰国",
+      "authorities": [
+        { "id": "customs-th", "name": "泰国海关厅", "domain": "customs" },
+        { "id": "etda", "name": "电子交易发展局", "domain": "etransactions" }
+      ]
+    },
+    {
+      "id": "ID",
+      "name": "印度尼西亚",
+      "authorities": [
+        { "id": "customs-id", "name": "印度尼西亚海关", "domain": "customs" },
+        { "id": "kominfo", "name": "通信与信息技术部", "domain": "platform" }
+      ]
+    },
+    {
+      "id": "VN",
+      "name": "越南",
+      "authorities": [
+        { "id": "customs-vn", "name": "越南海关总局", "domain": "customs" },
+        { "id": "mic-vn", "name": "信息通信部", "domain": "etransactions" }
+      ]
+    },
+    {
+      "id": "KH",
+      "name": "柬埔寨",
+      "authorities": [
+        { "id": "customs-kh", "name": "柬埔寨海关总署", "domain": "customs" },
+        { "id": "ptc-kh", "name": "邮电部", "domain": "etransactions" }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "id": "ob-asw-eco",
+      "agreement_id": "ag-asw",
+      "article": "第4条",
+      "title": "电子原产地证书跨境交换与受理",
+      "entry_into_force": "in_force"
+    },
+    {
+      "id": "ob-asw-sw",
+      "agreement_id": "ag-asw",
+      "article": "第6条",
+      "title": "国家单一窗口互联与电子申报",
+      "entry_into_force": "in_force"
+    },
+    {
+      "id": "ob-defa-07",
+      "agreement_id": "ag-defa",
+      "article": "第7条",
+      "title": "电子文件、电子签名与电子合同的跨境互认",
+      "entry_into_force": "not_in_force"
+    },
+    {
+      "id": "ob-defa-11",
+      "agreement_id": "ag-defa",
+      "article": "第11条",
+      "title": "数字交易平台监管合作与在线消费者保护",
+      "entry_into_force": "not_in_force"
+    },
+    {
+      "id": "ob-gtp-05",
+      "agreement_id": "ag-gtp",
+      "article": "第5条",
+      "title": "海关事项预先裁定",
+      "entry_into_force": "not_in_force"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t-sg-eco",
+      "obligation_id": "ob-asw-eco",
+      "member_id": "SG",
+      "authority_id": "customs-sg",
+      "title": "海关受理ASW电子原产地证书并接入国家单一窗口",
+      "legal_revision": { "required": false, "note": "现行《电子交易法》已承认电子单证效力" },
+      "technical_interface": { "required": true, "spec": "ASW eCO Gateway / UN/CEFACT 报文", "conformance": "passed" },
+      "budget": { "status": "approved" },
+      "deadline": "2026-03-31",
+      "evidence_required": ["asw-conformance-report", "customs-ops-record"],
+      "exemption": null,
+      "claimed_status": "implemented",
+      "fact_confirmed": { "by_member": "SG", "at": "2026-04-08" }
+    },
+    {
+      "id": "t-th-eco",
+      "obligation_id": "ob-asw-eco",
+      "member_id": "TH",
+      "authority_id": "customs-th",
+      "title": "修订海关条例并完成ASW电子原产地证书联调",
+      "legal_revision": {
+        "required": true,
+        "instrument": "海关电子单证条例修订",
+        "enactment_state": "enacted",
+        "enacted_on": "2026-02-20"
+      },
+      "technical_interface": { "required": true, "spec": "ASW eCO Gateway", "conformance": "passed" },
+      "budget": { "status": "approved" },
+      "deadline": "2026-06-30",
+      "evidence_required": ["asw-conformance-report", "legal-gazette", "customs-ops-record"],
+      "exemption": null,
+      "claimed_status": "implemented",
+      "fact_confirmed": { "by_member": "TH", "at": "2026-07-02" }
+    },
+    {
+      "id": "t-id-eco",
+      "obligation_id": "ob-asw-eco",
+      "member_id": "ID",
+      "authority_id": "customs-id",
+      "title": "海关法配套电子单证规章与ASW接口一致性改造",
+      "legal_revision": {
+        "required": true,
+        "instrument": "海关条例电子单证章节",
+        "enactment_state": "enacted",
+        "enacted_on": "2026-03-11"
+      },
+      "technical_interface": { "required": true, "spec": "ASW eCO Gateway", "conformance": "failed" },
+      "budget": { "status": "approved" },
+      "deadline": "2026-06-30",
+      "evidence_required": ["asw-conformance-report", "customs-ops-record"],
+      "exemption": null,
+      "claimed_status": "in_progress",
+      "fact_confirmed": { "by_member": "ID", "at": "2026-07-15" }
+    },
+    {
+      "id": "t-kh-eco",
+      "obligation_id": "ob-asw-eco",
+      "member_id": "KH",
+      "authority_id": "customs-kh",
+      "title": "电子海关法立法排期与ASW接口建设（过渡期内）",
+      "legal_revision": {
+        "required": true,
+        "instrument": "电子海关法草案",
+        "enactment_state": "drafted"
+      },
+      "technical_interface": { "required": true, "spec": "ASW eCO Gateway（试点）", "conformance": "testing" },
+      "budget": { "status": "requested" },
+      "deadline": "2027-06-30",
+      "evidence_required": ["asw-conformance-report", "legal-gazette"],
+      "exemption": {
+        "clause": "ASW议定书第10条最不发达成员过渡期",
+        "scope": "电子原产地证书在线受理义务",
+        "notified": true,
+        "valid_from": "2025-01-15",
+        "valid_to": "2027-12-31"
+      },
+      "claimed_status": "in_progress",
+      "fact_confirmed": null
+    },
+    {
+      "id": "t-sg-sw",
+      "obligation_id": "ob-asw-sw",
+      "member_id": "SG",
+      "authority_id": "customs-sg",
+      "title": "单一窗口与东盟枢纽互联（电子申报）",
+      "legal_revision": { "required": false, "note": "既有授权充分" },
+      "technical_interface": { "required": true, "spec": "ASW Single Window Interconnect", "conformance": "passed" },
+      "budget": { "status": "approved" },
+      "deadline": "2026-03-31",
+      "evidence_required": ["asw-conformance-report", "customs-ops-record"],
+      "exemption": null,
+      "claimed_status": "implemented",
+      "fact_confirmed": { "by_member": "SG", "at": "2026-04-08" }
+    },
+    {
+      "id": "t-th-sw",
+      "obligation_id": "ob-asw-sw",
+      "member_id": "TH",
+      "authority_id": "customs-th",
+      "title": "单一窗口互联口岸扩展",
+      "legal_revision": { "required": false },
+      "technical_interface": { "required": true, "spec": "ASW Single Window Interconnect", "conformance": "testing" },
+      "budget": { "status": "approved" },
+      "deadline": "2026-12-31",
+      "evidence_required": ["asw-conformance-report"],
+      "exemption": null,
+      "claimed_status": "partially_complete",
+      "fact_confirmed": { "by_member": "TH", "at": "2026-07-20" }
+    },
+    {
+      "id": "t-sg-esig",
+      "obligation_id": "ob-defa-07",
+      "member_id": "SG",
+      "authority_id": "imda",
+      "title": "跨境电子签名互认指定机关与技术互操作准备",
+      "legal_revision": {
+        "required": true,
+        "instrument": "电子交易法互认附则",
+        "enactment_state": "enacted",
+        "enacted_on": "2026-05-09"
+      },
+      "technical_interface": { "required": true, "spec": "跨境可信证书核验接口", "conformance": "passed" },
+      "budget": { "status": "approved" },
+      "deadline": "2026-12-31",
+      "evidence_required": ["legal-gazette", "interop-test-report"],
+      "exemption": null,
+      "claimed_status": "in_progress",
+      "fact_confirmed": { "by_member": "SG", "at": "2026-07-25" }
+    },
+    {
+      "id": "t-th-esig",
+      "obligation_id": "ob-defa-07",
+      "member_id": "TH",
+      "authority_id": "etda",
+      "title": "电子交易法修订与互认清单编制",
+      "legal_revision": {
+        "required": true,
+        "instrument": "电子交易法修订草案",
+        "enactment_state": "drafted"
+      },
+      "technical_interface": { "required": true, "spec": "待定（依DEFA技术附件）", "conformance": "none" },
+      "budget": { "status": "approved" },
+      "deadline": "2027-06-30",
+      "evidence_required": ["legal-gazette", "interop-test-report"],
+      "exemption": null,
+      "claimed_status": "in_progress",
+      "fact_confirmed": null
+    },
+    {
+      "id": "t-id-plat",
+      "obligation_id": "ob-defa-11",
+      "member_id": "ID",
+      "authority_id": "kominfo",
+      "title": "平台监管通知与消费者保护跨部门权限安排",
+      "legal_revision": {
+        "required": true,
+        "instrument": "平台监管条例草案",
+        "enactment_state": "drafted"
+      },
+      "technical_interface": { "required": true, "spec": "平台投诉与监管通报接口", "conformance": "none" },
+      "budget": { "status": "requested" },
+      "deadline": "2027-06-30",
+      "evidence_required": ["legal-gazette", "platform-supervision-record"],
+      "exemption": null,
+      "claimed_status": "planned",
+      "fact_confirmed": null
+    },
+    {
+      "id": "t-vn-ruling",
+      "obligation_id": "ob-gtp-05",
+      "member_id": "VN",
+      "authority_id": "customs-vn",
+      "title": "预先裁定在线申请系统与海关规章衔接",
+      "legal_revision": {
+        "required": true,
+        "instrument": "海关法实施细则修订",
+        "enactment_state": "drafted"
+      },
+      "technical_interface": { "required": true, "spec": "预先裁定在线申请门户", "conformance": "none" },
+      "budget": { "status": "requested" },
+      "deadline": "2027-06-30",
+      "evidence_required": ["legal-gazette", "system-acceptance-report"],
+      "exemption": null,
+      "claimed_status": "planned",
+      "fact_confirmed": null
+    },
+    {
+      "id": "t-vn-esig",
+      "obligation_id": "ob-defa-07",
+      "member_id": "VN",
+      "authority_id": "mic-vn",
+      "title": "电子签名字证书互认技术验证",
+      "legal_revision": {
+        "required": true,
+        "instrument": "电子交易法修订",
+        "enactment_state": "drafted"
+      },
+      "technical_interface": { "required": true, "spec": "跨境证书核验接口", "conformance": "testing" },
+      "budget": { "status": "approved" },
+      "deadline": "2027-03-31",
+      "evidence_required": ["legal-gazette", "interop-test-report"],
+      "exemption": null,
+      "claimed_status": "partially_complete",
+      "fact_confirmed": null
+    },
+    {
+      "id": "t-kh-ruling",
+      "obligation_id": "ob-gtp-05",
+      "member_id": "KH",
+      "authority_id": "customs-kh",
+      "title": "预先裁定制度国内可行性研究",
+      "legal_revision": { "required": true, "instrument": "待定", "enactment_state": "none" },
+      "technical_interface": { "required": true, "spec": "待定", "conformance": "none" },
+      "budget": { "status": "none" },
+      "deadline": "2027-12-31",
+      "evidence_required": ["legal-gazette", "system-acceptance-report"],
+      "exemption": null,
+      "claimed_status": "not_started",
+      "fact_confirmed": null
+    }
+  ],
+  "evidence_submissions": [
+    {
+      "id": "ev-sg-eco-01",
+      "task_id": "t-sg-eco",
+      "member_id": "SG",
+      "evidence_type": "asw-conformance-report",
+      "submitted_at": "2026-03-20",
+      "review": { "decision": "accepted", "reviewer": "法律与技术审查人员", "at": "2026-04-02" }
+    },
+    {
+      "id": "ev-sg-eco-02",
+      "task_id": "t-sg-eco",
+      "member_id": "SG",
+      "evidence_type": "customs-ops-record",
+      "submitted_at": "2026-03-25",
+      "review": { "decision": "accepted", "reviewer": "法律与技术审查人员", "at": "2026-04-02" }
+    },
+    {
+      "id": "ev-th-eco-01",
+      "task_id": "t-th-eco",
+      "member_id": "TH",
+      "evidence_type": "asw-conformance-report",
+      "submitted_at": "2026-05-30",
+      "review": { "decision": "accepted", "reviewer": "法律与技术审查人员", "at": "2026-06-18" }
+    },
+    {
+      "id": "ev-th-eco-02",
+      "task_id": "t-th-eco",
+      "member_id": "TH",
+      "evidence_type": "legal-gazette",
+      "submitted_at": "2026-04-10",
+      "review": { "decision": "accepted", "reviewer": "法律与技术审查人员", "at": "2026-04-25" }
+    },
+    {
+      "id": "ev-th-eco-03",
+      "task_id": "t-th-eco",
+      "member_id": "TH",
+      "evidence_type": "customs-ops-record",
+      "submitted_at": "2026-06-02",
+      "review": { "decision": "accepted", "reviewer": "法律与技术审查人员", "at": "2026-06-18" }
+    },
+    {
+      "id": "ev-id-eco-01",
+      "task_id": "t-id-eco",
+      "member_id": "ID",
+      "evidence_type": "asw-conformance-report",
+      "submitted_at": "2026-06-12",
+      "review": {
+        "decision": "returned",
+        "reviewer": "法律与技术审查人员",
+        "at": "2026-06-26",
+        "reason": "联调报文缺少ASW数据模型要求的签发机关与核验链接字段，一致性自检未通过，需整改后重新提交"
+      }
+    },
+    {
+      "id": "ev-sg-sw-01",
+      "task_id": "t-sg-sw",
+      "member_id": "SG",
+      "evidence_type": "asw-conformance-report",
+      "submitted_at": "2026-03-18",
+      "review": { "decision": "accepted", "reviewer": "法律与技术审查人员", "at": "2026-04-01" }
+    },
+    {
+      "id": "ev-sg-sw-02",
+      "task_id": "t-sg-sw",
+      "member_id": "SG",
+      "evidence_type": "customs-ops-record",
+      "submitted_at": "2026-03-22",
+      "review": { "decision": "accepted", "reviewer": "法律与技术审查人员", "at": "2026-04-01" }
+    }
+  ],
+  "quarterly_reports": [
+    {
+      "id": "r-kh-eco-q1",
+      "task_id": "t-kh-eco",
+      "member_id": "KH",
+      "quarter": "2026Q1",
+      "submitted_at": "2026-04-05",
+      "claimed_status": "in_progress",
+      "changes": [
+        {
+          "kind": "plan_adjusted",
+          "reason": "电子海关法草案需并入全国口岸改革一揽子立法议程，国内实施顺序调整为先试点口岸后全面铺开"
+        }
+      ]
+    },
+    {
+      "id": "r-kh-eco-q2",
+      "task_id": "t-kh-eco",
+      "member_id": "KH",
+      "quarter": "2026Q2",
+      "submitted_at": "2026-07-08",
+      "claimed_status": "in_progress",
+      "changes": [
+        {
+          "kind": "deadline_extended",
+          "previous_deadline": "2026-06-30",
+          "new_deadline": "2027-06-30",
+          "reason": "过渡期豁免已获通知，立法机关排期至2027年会期，接口预算尚待财政批复"
+        }
+      ]
+    },
+    {
+      "id": "r-kh-eco-q3",
+      "task_id": "t-kh-eco",
+      "member_id": "KH",
+      "quarter": "2026Q3",
+      "submitted_at": "2026-09-15",
+      "claimed_status": "in_progress",
+      "changes": [
+        {
+          "kind": "partially_complete",
+          "reason": "单一窗口试点口岸完成模拟环境联调，法律尚未颁布、正式受理未开通"
+        }
+      ]
+    },
+    {
+      "id": "r-id-eco-q2",
+      "task_id": "t-id-eco",
+      "member_id": "ID",
+      "quarter": "2026Q2",
+      "submitted_at": "2026-07-10",
+      "claimed_status": "in_progress",
+      "changes": [
+        {
+          "kind": "evidence_returned",
+          "evidence_submission_id": "ev-id-eco-01",
+          "reason": "审查方退回一致性报告：报文字段缺失；已列入下季度整改，技术接口阻断尚未解除"
+        }
+      ]
+    },
+    {
+      "id": "r-th-sw-q3",
+      "task_id": "t-th-sw",
+      "member_id": "TH",
+      "quarter": "2026Q3",
+      "submitted_at": "2026-09-12",
+      "claimed_status": "partially_complete",
+      "changes": [
+        {
+          "kind": "partially_complete",
+          "reason": "互联覆盖3个主要口岸，其余口岸报文映射与人员培训预计2026年12月完成"
+        }
+      ]
+    },
+    {
+      "id": "r-vn-esig-q3",
+      "task_id": "t-vn-esig",
+      "member_id": "VN",
+      "quarter": "2026Q3",
+      "submitted_at": "2026-09-18",
+      "claimed_status": "partially_complete",
+      "changes": [
+        {
+          "kind": "partially_complete",
+          "reason": "证书核验接口完成实验室互操作测试，电子交易法修订仍在议会审议"
+        }
+      ]
+    }
+  ],
+  "rejected_intake": [
+    {
+      "id": "ri-sg-esig-01",
+      "task_id": "t-sg-esig",
+      "member_id": "SG",
+      "attempted_at": "2026-07-10",
+      "attempted_claim": "implemented",
+      "rejected_code": "ARTICLE_NOT_IN_FORCE",
+      "reason": "DEFA第7条尚未生效，法律与技术准备虽已完成，也不得标记为已落实"
+    }
+  ],
+  "recognition_gates": [
+    {
+      "id": "gate-eco",
+      "obligation_id": "ob-asw-eco",
+      "name": "电子原产地证书互认门槛",
+      "bilateral": true,
+      "criteria": [
+        { "id": "legal-equivalence", "kind": "legal", "label": "国内法承认电子原产地证书法律效力" },
+        { "id": "technical-conformance", "kind": "technical", "label": "ASW接口一致性测试通过" },
+        { "id": "evidence-accepted", "kind": "evidence", "label": "受理操作证据通过审查" }
+      ]
+    },
+    {
+      "id": "gate-sww",
+      "obligation_id": "ob-asw-sw",
+      "name": "单一窗口互联门槛",
+      "bilateral": false,
+      "criteria": [
+        { "id": "technical-conformance", "kind": "technical", "label": "单一窗口互联一致性测试通过" },
+        { "id": "evidence-accepted", "kind": "evidence", "label": "运行操作证据通过审查" }
+      ]
+    },
+    {
+      "id": "gate-esig",
+      "obligation_id": "ob-defa-07",
+      "name": "电子签名跨境互认门槛",
+      "bilateral": true,
+      "criteria": [
+        { "id": "legal-equivalence", "kind": "legal", "label": "电子交易法等效并指定互认机关" },
+        { "id": "technical-conformance", "kind": "technical", "label": "证书核验互操作测试通过" },
+        { "id": "evidence-accepted", "kind": "evidence", "label": "互认运行证据通过审查" }
+      ]
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "iq-01",
+      "from_member": "ID",
+      "to_member": "SG",
+      "topic_task_id": "t-id-eco",
+      "subject": "ASW报文缺失字段的整改做法",
+      "question": "一致性报告因签发机关与核验链接字段缺失被退回，新方采用何种映射与回填流程？",
+      "status": "answered",
+      "answer": "以UN/CEFACT版本为基线在签发系统补充发证机关代码表，并在受理回执中返回核验URL；建议先在模拟环境跑全量回归再重新提交。",
+      "opened_at": "2026-07-20",
+      "answered_at": "2026-07-29",
+      "party_members": ["ID", "SG"]
+    },
+    {
+      "id": "iq-02",
+      "from_member": "KH",
+      "to_member": "TH",
+      "topic_task_id": "t-kh-eco",
+      "subject": "过渡期立法排期与预算批复经验",
+      "question": "海关电子单证条例修订在议会会期与预算批复之间如何排期？",
+      "status": "open",
+      "answer": null,
+      "opened_at": "2026-09-10",
+      "answered_at": null,
+      "party_members": ["KH", "TH"]
+    }
+  ],
+  "facility_measures": [
+    {
+      "id": "fm-eco",
+      "name": "跨境电子原产地证书（eCO）受理",
+      "description": "企业可通过国家单一窗口申领并在成员海关受理东盟电子原产地证书",
+      "gate_id": "gate-eco"
+    },
+    {
+      "id": "fm-sww",
+      "name": "单一窗口互联电子申报",
+      "description": "企业经单一窗口完成跨境货物电子申报与状态查询",
+      "gate_id": "gate-sww"
+    },
+    {
+      "id": "fm-esig",
+      "name": "电子文件与电子签名跨境互认",
+      "description": "跨境电子合同、电子签名在成员间获得效力互认",
+      "gate_id": "gate-esig"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-id-draft-platform",
+      "kind": "draft_legal_text",
+      "zone": "restricted:ID",
+      "member_id": "ID",
+      "title": "平台监管条例草案（内部征求意见稿）",
+      "linked_task_id": "t-id-plat"
+    },
+    {
+      "id": "doc-vn-budget-ruling",
+      "kind": "budget_detail",
+      "zone": "restricted:VN",
+      "member_id": "VN",
+      "title": "预先裁定系统建设预算明细（待批复）",
+      "linked_task_id": "t-vn-ruling"
+    },
+    {
+      "id": "doc-kh-evidence-return",
+      "kind": "returned_evidence_pack",
+      "zone": "restricted:KH",
+      "member_id": "KH",
+      "title": "试点联调退回材料包",
+      "linked_task_id": "t-kh-eco"
+    },
+    {
+      "id": "doc-asean-gate-map",
+      "kind": "cross_border_dependency_map",
+      "zone": "members",
+      "title": "互认门槛与跨国依赖对照（秘书处维护）"
+    },
+    {
+      "id": "doc-public-guide",
+      "kind": "enterprise_guide",
+      "zone": "public",
+      "title": "东盟便利化措施企业使用指引"
+    }
+  ],
+  "records": [
+    {
+      "id": "asean-obligation-implementation-source",
+      "kind": "source",
+      "label": "东盟经济部长会议讨论数字经济框架协议",
+      "status": "active"
+    },
+    {
+      "id": "asean-obligation-implementation-review",
+      "kind": "review",
+      "label": "协定义务拆解",
+      "status": "pending"
+    },
+    {
+      "id": "asean-obligation-implementation-history",
+      "kind": "history",
+      "label": "成员国需要在峰会签署前完成多项准备",
+      "status": "historical"
+    }
+  ]
+}

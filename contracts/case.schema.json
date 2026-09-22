@@ -1,0 +1,345 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "东盟协定义务实施矩阵案例资料",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "sample_id",
+    "actors",
+    "agreements",
+    "members",
+    "obligations",
+    "tasks",
+    "recognition_gates",
+    "facility_measures"
+  ],
+  "properties": {
+    "domain": { "type": "string", "const": "asean-obligation-implementation" },
+    "version": { "type": "integer", "minimum": 1 },
+    "sample_id": { "type": "string", "minLength": 1 },
+    "as_of": { "type": "string", "format": "date" },
+    "actors": { "type": "array", "minItems": 2, "items": { "type": "string" } },
+    "agreements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "status", "entry_into_force"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "status": { "type": "string", "enum": ["signature_preparation", "in_force"] },
+          "entry_into_force": { "type": "string", "enum": ["not_in_force", "in_force"] },
+          "effective_date": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "authorities"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "name": { "type": "string" },
+          "authorities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "domain"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "domain": { "type": "string", "enum": ["customs", "etransactions", "platform"] }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "obligations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "agreement_id", "article", "title", "entry_into_force"],
+        "properties": {
+          "id": { "type": "string" },
+          "agreement_id": { "type": "string" },
+          "article": { "type": "string" },
+          "title": { "type": "string" },
+          "entry_into_force": { "type": "string", "enum": ["not_in_force", "in_force"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "obligation_id",
+          "member_id",
+          "authority_id",
+          "title",
+          "legal_revision",
+          "technical_interface",
+          "budget",
+          "deadline",
+          "evidence_required",
+          "claimed_status"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "obligation_id": { "type": "string" },
+          "member_id": { "type": "string" },
+          "authority_id": { "type": "string" },
+          "title": { "type": "string" },
+          "legal_revision": {
+            "type": "object",
+            "required": ["required"],
+            "properties": {
+              "required": { "type": "boolean" },
+              "instrument": { "type": "string" },
+              "enactment_state": {
+                "type": "string",
+                "enum": ["none", "drafted", "enacted"]
+              },
+              "enacted_on": { "type": "string" },
+              "note": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "technical_interface": {
+            "type": "object",
+            "required": ["required", "spec", "conformance"],
+            "properties": {
+              "required": { "type": "boolean" },
+              "spec": { "type": "string" },
+              "conformance": {
+                "type": "string",
+                "enum": ["none", "testing", "failed", "passed"]
+              }
+            },
+            "additionalProperties": false
+          },
+          "budget": {
+            "type": "object",
+            "required": ["status"],
+            "properties": {
+              "status": { "type": "string", "enum": ["none", "requested", "approved"] }
+            },
+            "additionalProperties": false
+          },
+          "deadline": { "type": "string" },
+          "evidence_required": { "type": "array", "items": { "type": "string" } },
+          "exemption": {
+            "type": ["object", "null"],
+            "required": ["clause", "scope", "notified"],
+            "properties": {
+              "clause": { "type": "string" },
+              "scope": { "type": "string" },
+              "notified": { "type": "boolean" },
+              "valid_from": { "type": "string" },
+              "valid_to": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "claimed_status": {
+            "type": "string",
+            "enum": ["not_started", "planned", "in_progress", "partially_complete", "implemented"]
+          },
+          "fact_confirmed": {
+            "type": ["object", "null"],
+            "required": ["by_member", "at"],
+            "properties": {
+              "by_member": { "type": "string" },
+              "at": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidence_submissions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "task_id", "member_id", "evidence_type", "submitted_at"],
+        "properties": {
+          "id": { "type": "string" },
+          "task_id": { "type": "string" },
+          "member_id": { "type": "string" },
+          "evidence_type": { "type": "string" },
+          "submitted_at": { "type": "string" },
+          "review": {
+            "type": "object",
+            "required": ["decision", "reviewer", "at"],
+            "properties": {
+              "decision": { "type": "string", "enum": ["accepted", "returned", "pending"] },
+              "reviewer": { "type": "string" },
+              "at": { "type": "string" },
+              "reason": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "quarterly_reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "task_id", "member_id", "quarter", "submitted_at", "claimed_status", "changes"],
+        "properties": {
+          "id": { "type": "string" },
+          "task_id": { "type": "string" },
+          "member_id": { "type": "string" },
+          "quarter": { "type": "string" },
+          "submitted_at": { "type": "string" },
+          "claimed_status": {
+            "type": "string",
+            "enum": ["not_started", "planned", "in_progress", "partially_complete", "implemented"]
+          },
+          "changes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["kind", "reason"],
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": ["plan_adjusted", "deadline_extended", "partially_complete", "evidence_returned"]
+                },
+                "reason": { "type": "string", "minLength": 1 },
+                "previous_deadline": { "type": "string" },
+                "new_deadline": { "type": "string" },
+                "evidence_submission_id": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "rejected_intake": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "task_id", "member_id", "attempted_at", "attempted_claim", "rejected_code", "reason"],
+        "properties": {
+          "id": { "type": "string" },
+          "task_id": { "type": "string" },
+          "member_id": { "type": "string" },
+          "attempted_at": { "type": "string" },
+          "attempted_claim": { "type": "string" },
+          "rejected_code": { "type": "string" },
+          "blocker_codes": { "type": "array", "items": { "type": "string" } },
+          "reason": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "recognition_gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "obligation_id", "name", "criteria"],
+        "properties": {
+          "id": { "type": "string" },
+          "obligation_id": { "type": "string" },
+          "name": { "type": "string" },
+          "bilateral": { "type": "boolean" },
+          "criteria": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "kind", "label"],
+              "properties": {
+                "id": { "type": "string" },
+                "kind": { "type": "string", "enum": ["legal", "technical", "evidence"] },
+                "label": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "inquiries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "from_member", "to_member", "topic_task_id", "subject", "question", "status", "opened_at", "party_members"],
+        "properties": {
+          "id": { "type": "string" },
+          "from_member": { "type": "string" },
+          "to_member": { "type": "string" },
+          "topic_task_id": { "type": "string" },
+          "subject": { "type": "string" },
+          "question": { "type": "string" },
+          "status": { "type": "string", "enum": ["open", "answered"] },
+          "answer": { "type": ["string", "null"] },
+          "opened_at": { "type": "string" },
+          "answered_at": { "type": ["string", "null"] },
+          "party_members": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    },
+    "facility_measures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "gate_id"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "gate_id": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "zone", "title"],
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "type": "string" },
+          "zone": { "type": "string", "pattern": "^(public|members|restricted:[A-Z]{2})$" },
+          "member_id": { "type": "string" },
+          "title": { "type": "string" },
+          "linked_task_id": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "facts": { "type": "array", "items": { "type": "string" } },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "label", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "type": "string" },
+          "label": { "type": "string" },
+          "status": { "type": "string", "enum": ["active", "pending", "historical"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
