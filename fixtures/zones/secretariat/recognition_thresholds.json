@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "thresholds": [
+    {
+      "measure_code": "M-ESIG",
+      "requires_article_in_force": true,
+      "requires_domestic_gates": ["legal", "technical", "budget"],
+      "requires_evidence_accepted": true,
+      "requires_bilateral_conformity": true,
+      "conformity_spec": "ASEAN-TF-GW-v1",
+      "requires_arrangement": false,
+      "blocking_exemption_forbidden": true
+    },
+    {
+      "measure_code": "M-DSE",
+      "requires_article_in_force": true,
+      "requires_domestic_gates": ["legal", "technical", "budget"],
+      "requires_evidence_accepted": true,
+      "requires_bilateral_conformity": true,
+      "conformity_spec": "ASEAN-SW-GW-v3",
+      "requires_arrangement": false,
+      "blocking_exemption_forbidden": true
+    },
+    {
+      "measure_code": "M-AEO",
+      "requires_article_in_force": true,
+      "requires_domestic_gates": ["legal", "technical", "budget"],
+      "requires_evidence_accepted": true,
+      "requires_bilateral_conformity": true,
+      "conformity_spec": "ASEAN-AEO-IF-v2",
+      "requires_arrangement": true,
+      "blocking_exemption_forbidden": true
+    }
+  ]
+}

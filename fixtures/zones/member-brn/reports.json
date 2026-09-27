@@ -1,0 +1,79 @@
+{
+  "member": "BRN",
+  "reports": [
+    {
+      "id": "R-BRN-2026Q2",
+      "quarter": "2026Q2",
+      "submitted_at": "2026-07-10",
+      "updates": [
+        {
+          "measure_code": "M-ETR",
+          "state": "implemented",
+          "evidence_ids": ["EV-BRN-ETR-1", "EV-BRN-ETR-2"],
+          "change": null,
+          "reason": null
+        },
+        {
+          "measure_code": "M-PLT",
+          "state": "partial",
+          "evidence_ids": ["EV-BRN-PLT-1"],
+          "change": "partial_completion",
+          "reason": "法律已生效，但透明度报送门户尚在用户验收测试，平台企业账号开通功能未交付；已申请豁免小微平台报送义务（EX-BRN-PLT-SME）。"
+        },
+        {
+          "measure_code": "M-ACF",
+          "state": "partial",
+          "evidence_ids": ["EV-BRN-ACF-1"],
+          "change": "partial_completion",
+          "reason": "法律与系统均已上线运行，首版运行证据被审查退回（样本期不足、缺少时间戳），补充证据将于下季度提交。"
+        },
+        {
+          "measure_code": "M-AEO",
+          "state": "planned",
+          "evidence_ids": [],
+          "change": "extension",
+          "reason": "AEO 对账接口招标流标一次，FY2027 预算尚在议会审批；在系统上线前援引 TGP-09 分阶段实施（EX-AEO-BRN），完成期限由 2026-09 延至 2027-03。",
+          "previous_deadline": "2026-09-30",
+          "revised_deadline": "2027-03-31"
+        }
+      ]
+    },
+    {
+      "id": "R-BRN-2026Q3",
+      "quarter": "2026Q3",
+      "submitted_at": "2026-09-20",
+      "updates": [
+        {
+          "measure_code": "M-ACF",
+          "state": "implemented",
+          "evidence_ids": ["EV-BRN-ACF-2"],
+          "change": null,
+          "reason": null
+        },
+        {
+          "measure_code": "M-DSE",
+          "state": "implemented",
+          "evidence_ids": ["EV-BRN-DSE-1"],
+          "change": null,
+          "reason": null
+        },
+        {
+          "measure_code": "M-PLT",
+          "state": "partial",
+          "evidence_ids": ["EV-BRN-PLT-2"],
+          "change": "plan_adjustment",
+          "reason": "门户 UAT 发现平台分类字典需与国内行业目录对齐，上线计划由 2026-09 调整为 2026-11；法律义务继续有效，不影响豁免安排。",
+          "previous_deadline": "2026-09-30",
+          "revised_deadline": "2026-11-30"
+        },
+        {
+          "measure_code": "M-ESIG",
+          "state": "ready_pending_entry",
+          "evidence_ids": ["EV-BRN-ESIG-1"],
+          "change": null,
+          "reason": "国内法律已颁布但随条款生效日施行，网关处于试点；DEFA-12 尚未生效，本国不申报已落实。"
+        }
+      ]
+    }
+  ]
+}

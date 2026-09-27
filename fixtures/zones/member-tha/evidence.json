@@ -1,0 +1,58 @@
+{
+  "member": "THA",
+  "evidence": [
+    {
+      "id": "EV-THA-ETR-1",
+      "measure_code": "M-ETR",
+      "type": "legal_and_operational_dossier",
+      "title": "电子交易法修订公报与核验服务验收卷宗",
+      "doc_ref": "THA-ETR-DOS-2026-06",
+      "submitted_at": "2026-06-10",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-06-20", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-THA-PLT-1",
+      "measure_code": "M-PLT",
+      "type": "operational_stat",
+      "title": "ODR 门户上线与首月投诉处理统计",
+      "doc_ref": "THA-PLT-OPS-2026-09",
+      "submitted_at": "2026-09-18",
+      "reviews": []
+    },
+    {
+      "id": "EV-THA-ACF-1",
+      "measure_code": "M-ACF",
+      "type": "operational_stat",
+      "title": "预裁定签发系统三个月时限达标统计",
+      "doc_ref": "THA-ACF-OPS-2026Q3",
+      "submitted_at": "2026-09-05",
+      "reviews": [
+        { "by": "法律与技术审查人员", "at": "2026-09-12", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-THA-DSE-1",
+      "measure_code": "M-DSE",
+      "type": "technical_cert",
+      "title": "单一窗口节点 ASEAN-SW-GW-v3 符合性证书",
+      "doc_ref": "ASEAN-SW-CERT-THA-2026-07",
+      "submitted_at": "2026-07-08",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-07-15", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-THA-AEO-1",
+      "measure_code": "M-AEO",
+      "type": "operational_stat",
+      "title": "AEO 授权企业台账与对账接口运行报告",
+      "doc_ref": "THA-AEO-OPS-2026Q3",
+      "submitted_at": "2026-09-03",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-09-09", "decision": "accepted", "reason": null }
+      ]
+    }
+  ]
+}

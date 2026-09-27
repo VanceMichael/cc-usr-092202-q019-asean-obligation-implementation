@@ -1,0 +1,75 @@
+{
+  "results": [
+    {
+      "id": "CF-AEO-SGP-THA",
+      "measure_code": "M-AEO",
+      "pair": ["SGP", "THA"],
+      "spec_ref": "ASEAN-AEO-IF-v2",
+      "result": "passed",
+      "tested_at": "2026-08-28",
+      "cert_ref": "ASEAN-AEO-CERT-SGP-THA-2026-08",
+      "arrangement_id": "ARR-AEO-SGP-THA"
+    },
+    {
+      "id": "CF-AEO-SGP-BRN",
+      "measure_code": "M-AEO",
+      "pair": ["SGP", "BRN"],
+      "spec_ref": "ASEAN-AEO-IF-v2",
+      "result": "not_run",
+      "tested_at": null,
+      "cert_ref": null,
+      "arrangement_id": null,
+      "note": "文莱侧接口未建成，测试无法排期"
+    },
+    {
+      "id": "CF-DSE-SGP-THA",
+      "measure_code": "M-DSE",
+      "pair": ["SGP", "THA"],
+      "spec_ref": "ASEAN-SW-GW-v3",
+      "result": "passed",
+      "tested_at": "2026-07-20",
+      "cert_ref": "ASEAN-SW-CERT-PAIR-SGP-THA",
+      "arrangement_id": null
+    },
+    {
+      "id": "CF-DSE-SGP-BRN",
+      "measure_code": "M-DSE",
+      "pair": ["SGP", "BRN"],
+      "spec_ref": "ASEAN-SW-GW-v3",
+      "result": "passed",
+      "tested_at": "2026-08-30",
+      "cert_ref": "ASEAN-SW-CERT-PAIR-SGP-BRN",
+      "arrangement_id": null
+    },
+    {
+      "id": "CF-DSE-THA-BRN",
+      "measure_code": "M-DSE",
+      "pair": ["THA", "BRN"],
+      "spec_ref": "ASEAN-SW-GW-v3",
+      "result": "not_run",
+      "tested_at": null,
+      "cert_ref": null,
+      "arrangement_id": null
+    },
+    {
+      "id": "CF-ESIG-SGP-BRN",
+      "measure_code": "M-ESIG",
+      "pair": ["SGP", "BRN"],
+      "spec_ref": "ASEAN-TF-GW-v1",
+      "result": "not_run",
+      "tested_at": null,
+      "cert_ref": null,
+      "arrangement_id": null
+    }
+  ],
+  "arrangements": [
+    {
+      "id": "ARR-AEO-SGP-THA",
+      "measure_code": "M-AEO",
+      "pair": ["SGP", "THA"],
+      "title": "新加坡—泰国 AEO 互认安排",
+      "signed_at": "2026-09-02",
+      "status": "in_force"
+    }
+  ]
+}

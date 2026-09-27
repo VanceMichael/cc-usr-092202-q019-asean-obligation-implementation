@@ -1,0 +1,35 @@
+{
+  "member": "SGP",
+  "inquiries": [
+    {
+      "id": "Q-SGP-BRN-001",
+      "from": "SGP",
+      "to": "BRN",
+      "measure_code": "M-DSE",
+      "raised_at": "2026-08-25",
+      "subject": "单一窗口原产地证书电子交换报文版本",
+      "body": "新加坡侧拟于 2026-09 起交换 FORM D 电子原产地数据，请确认文莱网关支持 ASEAN-SW-GW-v3 的 CUSRSP 报文。",
+      "thread": [
+        {
+          "at": "2026-08-28",
+          "by": "BRN",
+          "kind": "answer",
+          "text": "文莱网关已按 ASEAN-SW-GW-v3 部署，CUSRSP 报文通过联调测试；符合性证书见 EV-BRN-DSE-1。"
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "id": "Q-SGP-THA-003",
+      "from": "SGP",
+      "to": "THA",
+      "measure_code": "M-AEO",
+      "raised_at": "2026-09-10",
+      "subject": "AEO 互认数据对账周期",
+      "body": "新加坡 AEO 企业在曼谷口岸希望确认互认安排下的企业编号对账周期。",
+      "thread": [],
+      "status": "open",
+      "due_at": "2026-10-10"
+    }
+  ]
+}

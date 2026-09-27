@@ -1,0 +1,41 @@
+{
+  "member": "THA",
+  "inquiries": [
+    {
+      "id": "Q-THA-BRN-002",
+      "from": "THA",
+      "to": "BRN",
+      "measure_code": "M-AEO",
+      "raised_at": "2026-09-02",
+      "subject": "AEO 互认安排启动时间",
+      "body": "泰国 AEO 企业询问经文莱口岸能否享受互认通关便利。",
+      "thread": [
+        {
+          "at": "2026-09-05",
+          "by": "ASEAN Secretariat",
+          "kind": "note",
+          "text": "该问题涉及互认门槛的双边启动条件，按程序由秘书处登记为跨国依赖项 DEP-AEO-THA-BRN，文莱侧技术系统尚在建设（EX-AEO-BRN）。"
+        },
+        {
+          "at": "2026-09-18",
+          "by": "BRN",
+          "kind": "answer",
+          "text": "文莱国内 AEO 办法已生效，但对账接口预计 2027-03 上线；在双边符合性测试完成前，暂不能提供互认便利，已在 2026Q3 回报中说明。"
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "id": "Q-SGP-THA-003",
+      "from": "SGP",
+      "to": "THA",
+      "measure_code": "M-AEO",
+      "raised_at": "2026-09-10",
+      "subject": "AEO 互认数据对账周期",
+      "body": "新加坡 AEO 企业在曼谷口岸希望确认互认安排下的企业编号对账周期。",
+      "thread": [],
+      "status": "open",
+      "due_at": "2026-10-10"
+    }
+  ]
+}

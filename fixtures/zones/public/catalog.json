@@ -1,0 +1,108 @@
+{
+  "catalog_version": 4,
+  "published_at": "2026-09-01",
+  "published_by": "ASEAN Secretariat",
+  "agreements": [
+    {
+      "code": "DEFA",
+      "title": "东盟数字经济框架协议",
+      "articles": [
+        {
+          "code": "DEFA-11",
+          "title": "电子交易与电子记录的国内法律效力",
+          "status": "in_force",
+          "effective_date": "2026-07-01"
+        },
+        {
+          "code": "DEFA-12",
+          "title": "电子签名与跨境信任服务互认",
+          "status": "not_in_force",
+          "effective_date": null,
+          "entry_condition": "全体成员完成国内批准并由秘书处通知生效"
+        },
+        {
+          "code": "DEFA-18",
+          "title": "数字平台监管透明度与在线争议解决",
+          "status": "in_force",
+          "effective_date": "2026-07-01"
+        }
+      ]
+    },
+    {
+      "code": "TGP",
+      "title": "货物贸易议定书（海关便利化章节）",
+      "articles": [
+        {
+          "code": "TGP-06",
+          "title": "海关预裁定（税则归类与原产地）",
+          "status": "in_force",
+          "effective_date": "2026-06-01"
+        },
+        {
+          "code": "TGP-08",
+          "title": "单一窗口跨境电子交换",
+          "status": "in_force",
+          "effective_date": "2026-06-01"
+        },
+        {
+          "code": "TGP-09",
+          "title": "经认证经营者（AEO）互认安排",
+          "status": "in_force",
+          "effective_date": "2026-06-01"
+        }
+      ]
+    }
+  ],
+  "measures": [
+    {
+      "code": "M-ETR",
+      "article": "DEFA-11",
+      "title": "电子合同与电子交易记录国内效力",
+      "domains": ["电子交易"],
+      "cross_border": false
+    },
+    {
+      "code": "M-ESIG",
+      "article": "DEFA-12",
+      "title": "合格电子签名跨境承认",
+      "domains": ["电子交易", "平台监管"],
+      "cross_border": true
+    },
+    {
+      "code": "M-PLT",
+      "article": "DEFA-18",
+      "title": "平台监管透明度与在线争议受理",
+      "domains": ["平台监管"],
+      "cross_border": false
+    },
+    {
+      "code": "M-ACF",
+      "article": "TGP-06",
+      "title": "海关预裁定申请与签发",
+      "domains": ["海关"],
+      "cross_border": false
+    },
+    {
+      "code": "M-DSE",
+      "article": "TGP-08",
+      "title": "单一窗口跨境单证电子交换",
+      "domains": ["海关", "电子交易"],
+      "cross_border": true
+    },
+    {
+      "code": "M-AEO",
+      "article": "TGP-09",
+      "title": "AEO 互认安排下的便利通关",
+      "domains": ["海关"],
+      "cross_border": true
+    }
+  ],
+  "breakdown_elements": [
+    { "key": "responsible_agencies", "label": "责任机关" },
+    { "key": "legal_amendment", "label": "法律修订" },
+    { "key": "technical_interface", "label": "技术接口" },
+    { "key": "budget", "label": "预算" },
+    { "key": "completion_evidence", "label": "完成证据" },
+    { "key": "exemption", "label": "适用豁免" }
+  ]
+}

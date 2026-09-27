@@ -1,0 +1,82 @@
+{
+  "member": "SGP",
+  "evidence": [
+    {
+      "id": "EV-SGP-ETR-1",
+      "measure_code": "M-ETR",
+      "type": "legal_and_operational_dossier",
+      "title": "电子交易法修订公报与核验 API 验收合并卷宗",
+      "doc_ref": "SGP-ETR-DOSSIER-2026-06",
+      "submitted_at": "2026-06-05",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-06-12", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-SGP-ESIG-1",
+      "measure_code": "M-ESIG",
+      "type": "legal_gazette",
+      "title": "电子签名法修订颁布文本（国内就绪证据）",
+      "doc_ref": "SGP-LG-2026-15",
+      "submitted_at": "2026-07-01",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-07-05", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-SGP-ESIG-2",
+      "measure_code": "M-ESIG",
+      "type": "technical_cert",
+      "title": "跨境信任服务网关内部就绪证书",
+      "doc_ref": "SGP-TF-CERT-2026-08",
+      "submitted_at": "2026-08-20",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-08-25", "decision": "accepted", "reason": "accepted_as_domestic_readiness_note" }
+      ]
+    },
+    {
+      "id": "EV-SGP-PLT-1",
+      "measure_code": "M-PLT",
+      "type": "operational_stat",
+      "title": "ODR 平台运行与透明度报送季度统计",
+      "doc_ref": "SGP-PLT-OPS-2026Q3",
+      "submitted_at": "2026-09-10",
+      "reviews": [
+        { "by": "法律与技术审查人员", "at": "2026-09-15", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-SGP-ACF-1",
+      "measure_code": "M-ACF",
+      "type": "operational_stat",
+      "title": "预裁定签发时限达标统计（2026年6–8月）",
+      "doc_ref": "SGP-ACF-OPS-2026Q3",
+      "submitted_at": "2026-09-02",
+      "reviews": [
+        { "by": "法律与技术审查人员", "at": "2026-09-08", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-SGP-DSE-1",
+      "measure_code": "M-DSE",
+      "type": "technical_cert",
+      "title": "单一窗口节点 ASEAN-SW-GW-v3 符合性证书",
+      "doc_ref": "ASEAN-SW-CERT-SGP-2026-07",
+      "submitted_at": "2026-07-02",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-07-08", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-SGP-AEO-1",
+      "measure_code": "M-AEO",
+      "type": "operational_stat",
+      "title": "AEO 授权企业台账与对账接口运行报告",
+      "doc_ref": "SGP-AEO-OPS-2026Q3",
+      "submitted_at": "2026-09-01",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-09-06", "decision": "accepted", "reason": null }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "member": "BRN",
+  "evidence": [
+    {
+      "id": "EV-BRN-ETR-1",
+      "measure_code": "M-ETR",
+      "type": "legal_gazette",
+      "title": "《电子交易令（修订）》政府公报文本",
+      "doc_ref": "BRN-LG-2026-11",
+      "submitted_at": "2026-05-05",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-05-10", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-BRN-ETR-2",
+      "measure_code": "M-ETR",
+      "type": "technical_cert",
+      "title": "电子记录核验服务上线验收报告",
+      "doc_ref": "BRN-ETR-UAT-2026-06",
+      "submitted_at": "2026-06-15",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-08-01", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-BRN-ESIG-1",
+      "measure_code": "M-ESIG",
+      "type": "legal_gazette",
+      "title": "《电子签名条例（2026年）》颁布文本（国内就绪证据）",
+      "doc_ref": "BRN-LG-2026-22",
+      "submitted_at": "2026-06-18",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-06-20", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-BRN-PLT-1",
+      "measure_code": "M-PLT",
+      "type": "legal_gazette",
+      "title": "《数字平台透明度通告（2026年）》公报文本",
+      "doc_ref": "BRN-LG-2026-27",
+      "submitted_at": "2026-07-08",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-07-10", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-BRN-PLT-2",
+      "measure_code": "M-PLT",
+      "type": "operational_stat",
+      "title": "透明度报送门户首月运行统计",
+      "doc_ref": "BRN-PLT-OPS-2026-08",
+      "submitted_at": "2026-09-05",
+      "reviews": []
+    },
+    {
+      "id": "EV-BRN-ACF-1",
+      "measure_code": "M-ACF",
+      "type": "operational_stat",
+      "title": "预裁定系统运行统计与截图（首版）",
+      "doc_ref": "BRN-ACF-OPS-v1",
+      "submitted_at": "2026-07-05",
+      "reviews": [
+        {
+          "by": "法律与技术审查人员",
+          "at": "2026-07-12",
+          "decision": "returned",
+          "reason": "运行统计样本不足三个月，且系统截图缺少签发时间戳，无法证明预裁定已按 TGP-06 规定时限实际签发"
+        }
+      ]
+    },
+    {
+      "id": "EV-BRN-ACF-2",
+      "measure_code": "M-ACF",
+      "type": "operational_stat",
+      "title": "预裁定系统三个月运行统计（含时间戳样本）",
+      "doc_ref": "BRN-ACF-OPS-v2",
+      "submitted_at": "2026-08-10",
+      "reviews": [
+        { "by": "法律与技术审查人员", "at": "2026-08-18", "decision": "accepted", "reason": null }
+      ]
+    },
+    {
+      "id": "EV-BRN-DSE-1",
+      "measure_code": "M-DSE",
+      "type": "technical_cert",
+      "title": "单一窗口跨境网关符合性测试报告（文莱侧）",
+      "doc_ref": "ASEAN-SW-CERT-BRN-2026-08",
+      "submitted_at": "2026-08-12",
+      "reviews": [
+        { "by": "ASEAN Secretariat", "at": "2026-08-19", "decision": "accepted", "reason": null }
+      ]
+    }
+  ]
+}

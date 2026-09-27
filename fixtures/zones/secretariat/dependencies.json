@@ -1,0 +1,47 @@
+{
+  "dependencies": [
+    {
+      "id": "DEP-AEO-THA-BRN",
+      "measure_code": "M-AEO",
+      "kind": "bilateral_recognition",
+      "members": ["THA", "BRN"],
+      "registered_at": "2026-09-05",
+      "registered_by": "ASEAN Secretariat",
+      "source_inquiry": "Q-THA-BRN-002",
+      "blocking_side": "BRN",
+      "status": "blocked",
+      "blockers": [
+        "文莱 AEO 对账接口尚在建设（技术接口未上线）",
+        "文莱援引 TGP-09 分阶段实施豁免 EX-AEO-BRN",
+        "双边符合性测试 ASEAN-AEO-IF-v2 尚未执行"
+      ]
+    },
+    {
+      "id": "DEP-AEO-SGP-BRN",
+      "measure_code": "M-AEO",
+      "kind": "bilateral_recognition",
+      "members": ["SGP", "BRN"],
+      "registered_at": "2026-09-06",
+      "registered_by": "ASEAN Secretariat",
+      "source_inquiry": null,
+      "blocking_side": "BRN",
+      "status": "blocked",
+      "blockers": [
+        "文莱 AEO 对账接口尚在建设（技术接口未上线）",
+        "文莱援引 TGP-09 分阶段实施豁免 EX-AEO-BRN"
+      ]
+    },
+    {
+      "id": "DEP-ESIG-ALL",
+      "measure_code": "M-ESIG",
+      "kind": "entry_into_force",
+      "members": "ALL",
+      "registered_at": "2026-07-01",
+      "registered_by": "ASEAN Secretariat",
+      "source_inquiry": null,
+      "blocking_side": null,
+      "status": "blocked",
+      "blockers": ["DEFA-12 尚未生效，电子签名跨境承认义务不对任何成员产生"]
+    }
+  ]
+}

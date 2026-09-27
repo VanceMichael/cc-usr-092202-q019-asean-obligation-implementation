@@ -1,0 +1,143 @@
+{
+  "member": "SGP",
+  "version": 5,
+  "updated_at": "2026-09-18",
+  "tasks": [
+    {
+      "measure_code": "M-ETR",
+      "article": "DEFA-11",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "SGP-IMDA", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《电子交易法（2026年修订）》",
+        "status": "in_force",
+        "effective_date": "2026-04-20",
+        "gazette_ref": "SGP-LG-2026-08"
+      },
+      "technical_interface": {
+        "system": "电子记录法律地位核验 API",
+        "status": "live",
+        "go_live_date": "2026-05-30",
+        "spec_ref": "SGP-ETR-IF-v3"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-IMDA-12", "amount_local": 800000, "currency": "SGD" },
+      "completion_evidence": ["EV-SGP-ETR-1"],
+      "exemption_id": null,
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-ESIG",
+      "article": "DEFA-12",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "SGP-IMDA", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《电子签名法（跨境信任服务修订）》",
+        "status": "enacted_not_in_force",
+        "effective_date": null,
+        "gazette_ref": "SGP-LG-2026-15",
+        "note": "第2条：修订部分自部长指定之日（即 DEFA-12 对新加坡生效之日）起施行"
+      },
+      "technical_interface": {
+        "system": "跨境信任服务互认网关",
+        "status": "live",
+        "go_live_date": "2026-08-15",
+        "spec_ref": "ASEAN-TF-GW-v1"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-IMDA-14", "amount_local": 650000, "currency": "SGD" },
+      "completion_evidence": ["EV-SGP-ESIG-1", "EV-SGP-ESIG-2"],
+      "exemption_id": null,
+      "prerequisites": ["M-ETR"]
+    },
+    {
+      "measure_code": "M-PLT",
+      "article": "DEFA-18",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "SGP-IMDA", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《平台透明度行为准则附属立法（2026年）》",
+        "status": "in_force",
+        "effective_date": "2026-07-01",
+        "gazette_ref": "SGP-LG-2026-19"
+      },
+      "technical_interface": {
+        "system": "在线争议解决登记平台",
+        "status": "live",
+        "go_live_date": "2026-07-10",
+        "spec_ref": "SGP-PLT-IF-v2"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-IMDA-18", "amount_local": 500000, "currency": "SGD" },
+      "completion_evidence": ["EV-SGP-PLT-1"],
+      "exemption_id": null,
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-ACF",
+      "article": "TGP-06",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "SGP-CUSTOMS", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《海关法（预裁定）（2026年修订）》",
+        "status": "in_force",
+        "effective_date": "2026-05-15",
+        "gazette_ref": "SGP-LG-2026-10"
+      },
+      "technical_interface": {
+        "system": "海关预裁定电子签发系统",
+        "status": "live",
+        "go_live_date": "2026-05-20",
+        "spec_ref": "SGP-ACF-IF-v4"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-CUS-08", "amount_local": 420000, "currency": "SGD" },
+      "completion_evidence": ["EV-SGP-ACF-1"],
+      "exemption_id": null,
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-DSE",
+      "article": "TGP-08",
+      "confirmation": "confirmed",
+      "responsible_agencies": [
+        { "agency_code": "SGP-CUSTOMS", "role": "主管机关" },
+        { "agency_code": "SGP-IMDA", "role": "技术配合机关" }
+      ],
+      "legal_amendment": {
+        "instrument": "《单一窗口法（2026年修订）》",
+        "status": "in_force",
+        "effective_date": "2026-05-15",
+        "gazette_ref": "SGP-LG-2026-11"
+      },
+      "technical_interface": {
+        "system": "新加坡单一窗口跨境交换节点",
+        "status": "live",
+        "go_live_date": "2026-06-25",
+        "spec_ref": "ASEAN-SW-GW-v3"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-CUS-09", "amount_local": 700000, "currency": "SGD" },
+      "completion_evidence": ["EV-SGP-DSE-1"],
+      "exemption_id": null,
+      "prerequisites": ["M-ACF"]
+    },
+    {
+      "measure_code": "M-AEO",
+      "article": "TGP-09",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "SGP-CUSTOMS", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《AEO 互认实施令（2026年）》",
+        "status": "in_force",
+        "effective_date": "2026-06-01",
+        "gazette_ref": "SGP-LG-2026-13"
+      },
+      "technical_interface": {
+        "system": "AEO 授权数据跨境对账接口",
+        "status": "live",
+        "go_live_date": "2026-06-10",
+        "spec_ref": "ASEAN-AEO-IF-v2"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-CUS-11", "amount_local": 350000, "currency": "SGD" },
+      "completion_evidence": ["EV-SGP-AEO-1"],
+      "exemption_id": null,
+      "prerequisites": ["M-ACF"]
+    }
+  ]
+}

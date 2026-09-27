@@ -1,0 +1,10 @@
+{
+  "member": "THA",
+  "name": "泰王国",
+  "zone": "member:THA",
+  "agencies": [
+    { "code": "THA-CUSTOMS", "name": "泰国海关厅", "domains": ["海关"] },
+    { "code": "THA-ETDA", "name": "泰国电子交易发展局", "domains": ["电子交易", "平台监管"] },
+    { "code": "THA-MOF", "name": "泰国财政部（预算）", "domains": ["预算"] }
+  ]
+}

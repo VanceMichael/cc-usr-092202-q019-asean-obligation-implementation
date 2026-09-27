@@ -1,0 +1,154 @@
+{
+  "member": "BRN",
+  "version": 7,
+  "updated_at": "2026-09-20",
+  "tasks": [
+    {
+      "measure_code": "M-ETR",
+      "article": "DEFA-11",
+      "confirmation": "confirmed",
+      "responsible_agencies": [
+        { "agency_code": "BRN-DEB", "role": "主管机关" },
+        { "agency_code": "BRN-CUSTOMS", "role": "配合机关" }
+      ],
+      "legal_amendment": {
+        "instrument": "《电子交易令（2026年修订）》",
+        "status": "in_force",
+        "effective_date": "2026-05-02",
+        "gazette_ref": "BRN-LG-2026-11"
+      },
+      "technical_interface": {
+        "system": "电子记录效力核验服务",
+        "status": "live",
+        "go_live_date": "2026-06-10",
+        "spec_ref": "BRN-ETR-IF-v2"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-DEB-07", "amount_local": 450000, "currency": "BND" },
+      "completion_evidence": ["EV-BRN-ETR-1", "EV-BRN-ETR-2"],
+      "exemption_id": null,
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-ESIG",
+      "article": "DEFA-12",
+      "confirmation": "confirmed",
+      "responsible_agencies": [
+        { "agency_code": "BRN-DEB", "role": "主管机关" }
+      ],
+      "legal_amendment": {
+        "instrument": "《电子签名条例（2026年）》",
+        "status": "enacted_not_in_force",
+        "effective_date": null,
+        "gazette_ref": "BRN-LG-2026-22",
+        "note": "条例第1(2)条：随 DEFA-12 对文莱生效之日起施行"
+      },
+      "technical_interface": {
+        "system": "合格电子签名验证网关",
+        "status": "live",
+        "go_live_date": "2026-09-10",
+        "spec_ref": "BRN-ESIG-IF-v1"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-DEB-09", "amount_local": 300000, "currency": "BND" },
+      "completion_evidence": ["EV-BRN-ESIG-1"],
+      "exemption_id": null,
+      "prerequisites": ["M-ETR"]
+    },
+    {
+      "measure_code": "M-PLT",
+      "article": "DEFA-18",
+      "confirmation": "confirmed",
+      "responsible_agencies": [
+        { "agency_code": "BRN-DEB", "role": "主管机关" }
+      ],
+      "legal_amendment": {
+        "instrument": "《数字平台透明度通告（2026年）》",
+        "status": "in_force",
+        "effective_date": "2026-07-05",
+        "gazette_ref": "BRN-LG-2026-27"
+      },
+      "technical_interface": {
+        "system": "平台监管透明度报送门户",
+        "status": "uat",
+        "go_live_date": null,
+        "spec_ref": "BRN-PLT-IF-rc1"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-DEB-11", "amount_local": 220000, "currency": "BND" },
+      "completion_evidence": ["EV-BRN-PLT-1", "EV-BRN-PLT-2"],
+      "exemption_id": "EX-BRN-PLT-SME",
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-ACF",
+      "article": "TGP-06",
+      "confirmation": "confirmed",
+      "responsible_agencies": [
+        { "agency_code": "BRN-CUSTOMS", "role": "主管机关" }
+      ],
+      "legal_amendment": {
+        "instrument": "《海关条例（预裁定）（2026年修订）》",
+        "status": "in_force",
+        "effective_date": "2026-06-05",
+        "gazette_ref": "BRN-LG-2026-18"
+      },
+      "technical_interface": {
+        "system": "海关预裁定在线申请系统",
+        "status": "live",
+        "go_live_date": "2026-06-20",
+        "spec_ref": "BRN-ACF-IF-v1"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-CUS-03", "amount_local": 380000, "currency": "BND" },
+      "completion_evidence": ["EV-BRN-ACF-1", "EV-BRN-ACF-2"],
+      "exemption_id": null,
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-DSE",
+      "article": "TGP-08",
+      "confirmation": "confirmed",
+      "responsible_agencies": [
+        { "agency_code": "BRN-CUSTOMS", "role": "主管机关" },
+        { "agency_code": "BRN-DEB", "role": "技术配合机关" }
+      ],
+      "legal_amendment": {
+        "instrument": "《国家单一窗口令（2026年修订）》",
+        "status": "in_force",
+        "effective_date": "2026-06-05",
+        "gazette_ref": "BRN-LG-2026-19"
+      },
+      "technical_interface": {
+        "system": "国家单一窗口跨境交换网关",
+        "status": "live",
+        "go_live_date": "2026-08-10",
+        "spec_ref": "ASEAN-SW-GW-v3"
+      },
+      "budget": { "status": "allocated", "line": "FY2026-CUS-05", "amount_local": 620000, "currency": "BND" },
+      "completion_evidence": ["EV-BRN-DSE-1"],
+      "exemption_id": null,
+      "prerequisites": ["M-ACF"]
+    },
+    {
+      "measure_code": "M-AEO",
+      "article": "TGP-09",
+      "confirmation": "confirmed",
+      "responsible_agencies": [
+        { "agency_code": "BRN-CUSTOMS", "role": "主管机关" }
+      ],
+      "legal_amendment": {
+        "instrument": "《经认证经营者办法（2026年）》",
+        "status": "in_force",
+        "effective_date": "2026-06-05",
+        "gazette_ref": "BRN-LG-2026-20"
+      },
+      "technical_interface": {
+        "system": "AEO 授权与跨境对账接口",
+        "status": "build",
+        "go_live_date": null,
+        "spec_ref": "BRN-AEO-IF-wip"
+      },
+      "budget": { "status": "requested", "line": "FY2027-CUS-AEO", "amount_local": null, "currency": "BND" },
+      "completion_evidence": [],
+      "exemption_id": "EX-AEO-BRN",
+      "prerequisites": ["M-ACF"]
+    }
+  ]
+}

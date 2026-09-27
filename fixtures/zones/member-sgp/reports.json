@@ -1,0 +1,32 @@
+{
+  "member": "SGP",
+  "reports": [
+    {
+      "id": "R-SGP-2026Q2",
+      "quarter": "2026Q2",
+      "submitted_at": "2026-07-08",
+      "updates": [
+        { "measure_code": "M-ETR", "state": "implemented", "evidence_ids": ["EV-SGP-ETR-1"], "change": null, "reason": null },
+        { "measure_code": "M-ACF", "state": "implemented", "evidence_ids": ["EV-SGP-ACF-1"], "change": null, "reason": null },
+        { "measure_code": "M-DSE", "state": "implemented", "evidence_ids": ["EV-SGP-DSE-1"], "change": null, "reason": null },
+        { "measure_code": "M-AEO", "state": "implemented", "evidence_ids": ["EV-SGP-AEO-1"], "change": null, "reason": null },
+        { "measure_code": "M-PLT", "state": "in_progress", "evidence_ids": [], "change": null, "reason": null }
+      ]
+    },
+    {
+      "id": "R-SGP-2026Q3",
+      "quarter": "2026Q3",
+      "submitted_at": "2026-09-18",
+      "updates": [
+        { "measure_code": "M-PLT", "state": "implemented", "evidence_ids": ["EV-SGP-PLT-1"], "change": null, "reason": null },
+        {
+          "measure_code": "M-ESIG",
+          "state": "ready_pending_entry",
+          "evidence_ids": ["EV-SGP-ESIG-1", "EV-SGP-ESIG-2"],
+          "change": null,
+          "reason": "DEFA-12 尚未生效；国内修订法已颁布待施行、互认网关已上线，仅登记为国内就绪，不申报已落实。"
+        }
+      ]
+    }
+  ]
+}

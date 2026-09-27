@@ -1,0 +1,39 @@
+{
+  "member": "THA",
+  "reports": [
+    {
+      "id": "R-THA-2026Q2",
+      "quarter": "2026Q2",
+      "submitted_at": "2026-07-12",
+      "updates": [
+        { "measure_code": "M-ETR", "state": "implemented", "evidence_ids": ["EV-THA-ETR-1"], "change": null, "reason": null },
+        { "measure_code": "M-ACF", "state": "implemented", "evidence_ids": ["EV-THA-ACF-1"], "change": null, "reason": null },
+        { "measure_code": "M-DSE", "state": "implemented", "evidence_ids": ["EV-THA-DSE-1"], "change": null, "reason": null },
+        { "measure_code": "M-AEO", "state": "implemented", "evidence_ids": ["EV-THA-AEO-1"], "change": null, "reason": null },
+        {
+          "measure_code": "M-ESIG",
+          "state": "planned",
+          "evidence_ids": [],
+          "change": "plan_adjustment",
+          "reason": "电子签名修订草案在立法机构一读后需合并平台监管相关条款，立法计划由 2026Q3 调整至 2026Q4；DEFA-12 本身亦未生效。",
+          "previous_deadline": "2026-09-30",
+          "revised_deadline": "2026-12-31"
+        }
+      ]
+    },
+    {
+      "id": "R-THA-2026Q3",
+      "quarter": "2026Q3",
+      "submitted_at": "2026-09-22",
+      "updates": [
+        {
+          "measure_code": "M-PLT",
+          "state": "partial",
+          "evidence_ids": ["EV-THA-PLT-1"],
+          "change": null,
+          "reason": "门户 2026-08-20 上线，运行统计证据已提交尚待秘书处审查；审查接受前不计为已落实。"
+        }
+      ]
+    }
+  ]
+}

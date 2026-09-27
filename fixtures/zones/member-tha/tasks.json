@@ -1,0 +1,143 @@
+{
+  "member": "THA",
+  "version": 6,
+  "updated_at": "2026-09-22",
+  "tasks": [
+    {
+      "measure_code": "M-ETR",
+      "article": "DEFA-11",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "THA-ETDA", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《电子交易法（第3号修订）（2026年）》",
+        "status": "in_force",
+        "effective_date": "2026-05-10",
+        "gazette_ref": "THA-LG-2026-14"
+      },
+      "technical_interface": {
+        "system": "电子记录核验服务",
+        "status": "live",
+        "go_live_date": "2026-06-01",
+        "spec_ref": "THA-ETR-IF-v1"
+      },
+      "budget": { "status": "allocated", "line": "FY2566-ETDA-05", "amount_local": 12000000, "currency": "THB" },
+      "completion_evidence": ["EV-THA-ETR-1"],
+      "exemption_id": null,
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-ESIG",
+      "article": "DEFA-12",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "THA-ETDA", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《电子交易法（电子签名与信任服务修订草案）》",
+        "status": "draft",
+        "effective_date": null,
+        "gazette_ref": null,
+        "note": "草案仍在国家立法机构审议"
+      },
+      "technical_interface": {
+        "system": "信任服务互认网关（泰国节点）",
+        "status": "build",
+        "go_live_date": null,
+        "spec_ref": "THA-ESIG-IF-wip"
+      },
+      "budget": { "status": "partial", "line": "FY2567-ETDA-ESIG", "amount_local": 4000000, "currency": "THB" },
+      "completion_evidence": [],
+      "exemption_id": null,
+      "prerequisites": ["M-ETR"]
+    },
+    {
+      "measure_code": "M-PLT",
+      "article": "DEFA-18",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "THA-ETDA", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《数字平台服务法（透明度与争议解决条款）》",
+        "status": "in_force",
+        "effective_date": "2026-07-01",
+        "gazette_ref": "THA-LG-2026-21"
+      },
+      "technical_interface": {
+        "system": "平台监管投诉与 ODR 门户",
+        "status": "live",
+        "go_live_date": "2026-08-20",
+        "spec_ref": "THA-PLT-IF-v1"
+      },
+      "budget": { "status": "allocated", "line": "FY2566-ETDA-09", "amount_local": 9000000, "currency": "THB" },
+      "completion_evidence": ["EV-THA-PLT-1"],
+      "exemption_id": null,
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-ACF",
+      "article": "TGP-06",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "THA-CUSTOMS", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《海关法（预裁定）（2026年修订）》",
+        "status": "in_force",
+        "effective_date": "2026-06-01",
+        "gazette_ref": "THA-LG-2026-12"
+      },
+      "technical_interface": {
+        "system": "预裁定在线签发系统",
+        "status": "live",
+        "go_live_date": "2026-06-15",
+        "spec_ref": "THA-ACF-IF-v2"
+      },
+      "budget": { "status": "allocated", "line": "FY2566-CUS-02", "amount_local": 7500000, "currency": "THB" },
+      "completion_evidence": ["EV-THA-ACF-1"],
+      "exemption_id": null,
+      "prerequisites": []
+    },
+    {
+      "measure_code": "M-DSE",
+      "article": "TGP-08",
+      "confirmation": "confirmed",
+      "responsible_agencies": [
+        { "agency_code": "THA-CUSTOMS", "role": "主管机关" },
+        { "agency_code": "THA-ETDA", "role": "技术配合机关" }
+      ],
+      "legal_amendment": {
+        "instrument": "《单一窗口海关数据交换令（2026年）》",
+        "status": "in_force",
+        "effective_date": "2026-06-01",
+        "gazette_ref": "THA-LG-2026-13"
+      },
+      "technical_interface": {
+        "system": "泰国国家单一窗口跨境交换节点",
+        "status": "live",
+        "go_live_date": "2026-07-01",
+        "spec_ref": "ASEAN-SW-GW-v3"
+      },
+      "budget": { "status": "allocated", "line": "FY2566-CUS-04", "amount_local": 15000000, "currency": "THB" },
+      "completion_evidence": ["EV-THA-DSE-1"],
+      "exemption_id": null,
+      "prerequisites": ["M-ACF"]
+    },
+    {
+      "measure_code": "M-AEO",
+      "article": "TGP-09",
+      "confirmation": "confirmed",
+      "responsible_agencies": [{ "agency_code": "THA-CUSTOMS", "role": "主管机关" }],
+      "legal_amendment": {
+        "instrument": "《AEO 互认实施细则（2026年）》",
+        "status": "in_force",
+        "effective_date": "2026-06-01",
+        "gazette_ref": "THA-LG-2026-15"
+      },
+      "technical_interface": {
+        "system": "AEO 授权数据对账接口",
+        "status": "live",
+        "go_live_date": "2026-06-20",
+        "spec_ref": "ASEAN-AEO-IF-v2"
+      },
+      "budget": { "status": "allocated", "line": "FY2566-CUS-06", "amount_local": 6000000, "currency": "THB" },
+      "completion_evidence": ["EV-THA-AEO-1"],
+      "exemption_id": null,
+      "prerequisites": ["M-ACF"]
+    }
+  ]
+}

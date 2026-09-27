@@ -1,0 +1,10 @@
+{
+  "member": "SGP",
+  "name": "新加坡共和国",
+  "zone": "member:SGP",
+  "agencies": [
+    { "code": "SGP-CUSTOMS", "name": "新加坡关税局", "domains": ["海关"] },
+    { "code": "SGP-IMDA", "name": "资讯通信媒体发展局", "domains": ["电子交易", "平台监管"] },
+    { "code": "SGP-MOF", "name": "新加坡财政部（预算）", "domains": ["预算"] }
+  ]
+}

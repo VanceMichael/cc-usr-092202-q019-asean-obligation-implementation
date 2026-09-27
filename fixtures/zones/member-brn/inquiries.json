@@ -1,0 +1,47 @@
+{
+  "member": "BRN",
+  "inquiries": [
+    {
+      "id": "Q-SGP-BRN-001",
+      "from": "SGP",
+      "to": "BRN",
+      "measure_code": "M-DSE",
+      "raised_at": "2026-08-25",
+      "subject": "单一窗口原产地证书电子交换报文版本",
+      "body": "新加坡侧拟于 2026-09 起交换 FORM D 电子原产地数据，请确认文莱网关支持 ASEAN-SW-GW-v3 的 CUSRSP 报文。",
+      "thread": [
+        {
+          "at": "2026-08-28",
+          "by": "BRN",
+          "kind": "answer",
+          "text": "文莱网关已按 ASEAN-SW-GW-v3 部署，CUSRSP 报文通过联调测试；符合性证书见 EV-BRN-DSE-1。"
+        }
+      ],
+      "status": "answered"
+    },
+    {
+      "id": "Q-THA-BRN-002",
+      "from": "THA",
+      "to": "BRN",
+      "measure_code": "M-AEO",
+      "raised_at": "2026-09-02",
+      "subject": "AEO 互认安排启动时间",
+      "body": "泰国 AEO 企业询问经文莱口岸能否享受互认通关便利。",
+      "thread": [
+        {
+          "at": "2026-09-05",
+          "by": "ASEAN Secretariat",
+          "kind": "note",
+          "text": "该问题涉及互认门槛的双边启动条件，按程序由秘书处登记为跨国依赖项 DEP-AEO-THA-BRN，文莱侧技术系统尚在建设（EX-AEO-BRN）。"
+        },
+        {
+          "at": "2026-09-18",
+          "by": "BRN",
+          "kind": "answer",
+          "text": "文莱国内 AEO 办法已生效，但对账接口预计 2027-03 上线；在双边符合性测试完成前，暂不能提供互认便利，已在 2026Q3 回报中说明。"
+        }
+      ],
+      "status": "answered"
+    }
+  ]
+}

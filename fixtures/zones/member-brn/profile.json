@@ -1,0 +1,10 @@
+{
+  "member": "BRN",
+  "name": "文莱达鲁萨兰国",
+  "zone": "member:BRN",
+  "agencies": [
+    { "code": "BRN-CUSTOMS", "name": "文莱皇家关税局", "domains": ["海关"] },
+    { "code": "BRN-DEB", "name": "文莱数字经济局", "domains": ["电子交易", "平台监管"] },
+    { "code": "BRN-MOF", "name": "文莱财政与经济部（预算）", "domains": ["预算"] }
+  ]
+}

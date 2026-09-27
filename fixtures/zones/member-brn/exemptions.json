@@ -1,0 +1,21 @@
+{
+  "member": "BRN",
+  "exemptions": [
+    {
+      "id": "EX-BRN-PLT-SME",
+      "measure_code": "M-PLT",
+      "scope": "年交易额低于 100 万文元的境内小微平台暂免于季度透明度报送",
+      "basis": "DEFA-18 第4款（发展中成员过渡期与小微主体豁免）",
+      "blocking": true,
+      "notification": { "notified_to": "ASEAN Secretariat", "at": "2026-07-02", "acknowledged": true }
+    },
+    {
+      "id": "EX-AEO-BRN",
+      "measure_code": "M-AEO",
+      "scope": "在 AEO 国内授权系统上线前，暂不与其他成员交换 AEO 授权数据",
+      "basis": "TGP-09 第3款（分阶段实施）",
+      "blocking": true,
+      "notification": { "notified_to": "ASEAN Secretariat", "at": "2026-06-15", "acknowledged": true }
+    }
+  ]
+}

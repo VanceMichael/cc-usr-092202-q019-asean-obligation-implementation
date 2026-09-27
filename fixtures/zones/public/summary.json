@@ -1,0 +1,256 @@
+{
+  "doc": "public_implementation_summary",
+  "published_at": "2026-09-27",
+  "published_by": "ASEAN Secretariat",
+  "catalog_version": 4,
+  "entries": [
+    {
+      "measure_code": "M-ETR",
+      "measure_title": "电子合同与电子交易记录国内效力",
+      "domains": [
+        "电子交易"
+      ],
+      "cross_border": false,
+      "member": "BRN",
+      "member_name": "文莱达鲁萨兰国",
+      "status": "available",
+      "available_from": "2026-06-10"
+    },
+    {
+      "measure_code": "M-ETR",
+      "measure_title": "电子合同与电子交易记录国内效力",
+      "domains": [
+        "电子交易"
+      ],
+      "cross_border": false,
+      "member": "SGP",
+      "member_name": "新加坡共和国",
+      "status": "available",
+      "available_from": "2026-05-30"
+    },
+    {
+      "measure_code": "M-ETR",
+      "measure_title": "电子合同与电子交易记录国内效力",
+      "domains": [
+        "电子交易"
+      ],
+      "cross_border": false,
+      "member": "THA",
+      "member_name": "泰王国",
+      "status": "available",
+      "available_from": "2026-06-01"
+    },
+    {
+      "measure_code": "M-ESIG",
+      "measure_title": "合格电子签名跨境承认",
+      "domains": [
+        "电子交易",
+        "平台监管"
+      ],
+      "cross_border": true,
+      "member": "BRN",
+      "member_name": "文莱达鲁萨兰国",
+      "status": "not_available"
+    },
+    {
+      "measure_code": "M-ESIG",
+      "measure_title": "合格电子签名跨境承认",
+      "domains": [
+        "电子交易",
+        "平台监管"
+      ],
+      "cross_border": true,
+      "member": "SGP",
+      "member_name": "新加坡共和国",
+      "status": "not_available"
+    },
+    {
+      "measure_code": "M-ESIG",
+      "measure_title": "合格电子签名跨境承认",
+      "domains": [
+        "电子交易",
+        "平台监管"
+      ],
+      "cross_border": true,
+      "member": "THA",
+      "member_name": "泰王国",
+      "status": "not_available"
+    },
+    {
+      "measure_code": "M-PLT",
+      "measure_title": "平台监管透明度与在线争议受理",
+      "domains": [
+        "平台监管"
+      ],
+      "cross_border": false,
+      "member": "BRN",
+      "member_name": "文莱达鲁萨兰国",
+      "status": "not_available"
+    },
+    {
+      "measure_code": "M-PLT",
+      "measure_title": "平台监管透明度与在线争议受理",
+      "domains": [
+        "平台监管"
+      ],
+      "cross_border": false,
+      "member": "SGP",
+      "member_name": "新加坡共和国",
+      "status": "available",
+      "available_from": "2026-07-10"
+    },
+    {
+      "measure_code": "M-PLT",
+      "measure_title": "平台监管透明度与在线争议受理",
+      "domains": [
+        "平台监管"
+      ],
+      "cross_border": false,
+      "member": "THA",
+      "member_name": "泰王国",
+      "status": "not_available"
+    },
+    {
+      "measure_code": "M-ACF",
+      "measure_title": "海关预裁定申请与签发",
+      "domains": [
+        "海关"
+      ],
+      "cross_border": false,
+      "member": "BRN",
+      "member_name": "文莱达鲁萨兰国",
+      "status": "available",
+      "available_from": "2026-06-20"
+    },
+    {
+      "measure_code": "M-ACF",
+      "measure_title": "海关预裁定申请与签发",
+      "domains": [
+        "海关"
+      ],
+      "cross_border": false,
+      "member": "SGP",
+      "member_name": "新加坡共和国",
+      "status": "available",
+      "available_from": "2026-05-20"
+    },
+    {
+      "measure_code": "M-ACF",
+      "measure_title": "海关预裁定申请与签发",
+      "domains": [
+        "海关"
+      ],
+      "cross_border": false,
+      "member": "THA",
+      "member_name": "泰王国",
+      "status": "available",
+      "available_from": "2026-06-15"
+    },
+    {
+      "measure_code": "M-DSE",
+      "measure_title": "单一窗口跨境单证电子交换",
+      "domains": [
+        "海关",
+        "电子交易"
+      ],
+      "cross_border": true,
+      "member": "BRN",
+      "member_name": "文莱达鲁萨兰国",
+      "status": "available",
+      "available_from": "2026-08-10"
+    },
+    {
+      "measure_code": "M-DSE",
+      "measure_title": "单一窗口跨境单证电子交换",
+      "domains": [
+        "海关",
+        "电子交易"
+      ],
+      "cross_border": true,
+      "member": "SGP",
+      "member_name": "新加坡共和国",
+      "status": "available",
+      "available_from": "2026-06-25"
+    },
+    {
+      "measure_code": "M-DSE",
+      "measure_title": "单一窗口跨境单证电子交换",
+      "domains": [
+        "海关",
+        "电子交易"
+      ],
+      "cross_border": true,
+      "member": "THA",
+      "member_name": "泰王国",
+      "status": "available",
+      "available_from": "2026-07-01"
+    },
+    {
+      "measure_code": "M-AEO",
+      "measure_title": "AEO 互认安排下的便利通关",
+      "domains": [
+        "海关"
+      ],
+      "cross_border": true,
+      "member": "BRN",
+      "member_name": "文莱达鲁萨兰国",
+      "status": "not_available"
+    },
+    {
+      "measure_code": "M-AEO",
+      "measure_title": "AEO 互认安排下的便利通关",
+      "domains": [
+        "海关"
+      ],
+      "cross_border": true,
+      "member": "SGP",
+      "member_name": "新加坡共和国",
+      "status": "available",
+      "available_from": "2026-06-10"
+    },
+    {
+      "measure_code": "M-AEO",
+      "measure_title": "AEO 互认安排下的便利通关",
+      "domains": [
+        "海关"
+      ],
+      "cross_border": true,
+      "member": "THA",
+      "member_name": "泰王国",
+      "status": "available",
+      "available_from": "2026-06-20"
+    }
+  ],
+  "recognition": [
+    {
+      "measure_code": "M-DSE",
+      "measure_title": "单一窗口跨境单证电子交换",
+      "pair": [
+        "BRN",
+        "SGP"
+      ],
+      "status": "available",
+      "conformity_ref": "ASEAN-SW-CERT-PAIR-SGP-BRN"
+    },
+    {
+      "measure_code": "M-DSE",
+      "measure_title": "单一窗口跨境单证电子交换",
+      "pair": [
+        "SGP",
+        "THA"
+      ],
+      "status": "available",
+      "conformity_ref": "ASEAN-SW-CERT-PAIR-SGP-THA"
+    },
+    {
+      "measure_code": "M-AEO",
+      "measure_title": "AEO 互认安排下的便利通关",
+      "pair": [
+        "SGP",
+        "THA"
+      ],
+      "status": "available",
+      "conformity_ref": "ASEAN-AEO-CERT-SGP-THA-2026-08"
+    }
+  ]
+}
